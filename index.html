@@ -3,33 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Angie Au Yong - Consultant Anaesthesiologist</title>
+    <title>Dr. Angie Au Yong</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Dr. Angie Au Yong</h1>
-        <h2>Consultant Anaesthesiologist</h2>
+        <div class="hero">
+            <h1>Dr. Angie Au Yong</h1>
+            <p>Your trusted healthcare provider</p>
+            <a href="#services" class="btn">Learn More</a>
+        </div>
     </header>
-    <main>
-        <section>
-            <h3>About Me</h3>
-            <p>I am Dr. Angie Au Yong, a consultant anaesthesiologist with extensive experience in both surgical and anesthesia management.</p>
-        </section>
-        <section>
-            <h3>Services</h3>
-            <ul>
-                <li>Surgical Anesthesia</li>
-                <li>Pain Management</li>
-                <li>Preoperative Assessment</li>
-            </ul>
-        </section>
-        <section>
-            <h3>Contact</h3>
-            <p>Email: contact@drangieauyong.com</p>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Dr. Angie Au Yong</p>
-    </footer>
+
+    <section id="about">
+        <h2>About Dr. Au Yong</h2>
+        <p>Dr. Angie Au Yong is a compassionate and dedicated healthcare professional with years of experience in patient care.</p>
+        <img src="https://via.placeholder.com/400" alt="Dr. Angie Au Yong">
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul>
+            <li>Consultation</li>
+            <li>Medical Check-Ups</li>
+            <li>Specialized Treatments</li>
+        </ul>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <blockquote>
+            <p>"Dr. Au Yong helped me through a tough time. Highly recommend!" - Patient A</p>
+        </blockquote>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Add form validation or submission logic here
+            alert('Form submitted!');
+        });
+    </script>
 </body>
 </html>
