@@ -3,43 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Angie Au Yong</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Dr Angie Au Yong Phui Sze - Consultant Anaesthesiologist</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <div class="hero">
-            <h1>Dr. Angie Au Yong</h1>
-            <p>Your trusted healthcare provider</p>
-            <a href="#services" class="btn">Learn More</a>
-        </div>
-    </header>
 
-    <section id="about">
-        <h2>About Dr. Au Yong</h2>
-        <p>Dr. Angie Au Yong is a compassionate and dedicated healthcare professional with years of experience in patient care.</p>
-        <img src="https://via.placeholder.com/400" alt="Dr. Angie Au Yong">
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Welcome to Dr Angie Au Yong Phui Sze's Clinic</h1>
+        <p>Your health is our priority.</p>
     </section>
 
+    <!-- Stats Section -->
+    <section id="stats">
+        <h2>Our Achievements</h2>
+        <p>1000+ Successful Surgeries</p>
+        <p>20 Years of Experience</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Dr. Angie Au Yong Phui Sze</h2>
+        <p>Dr. Angie is a certified anaesthesiologist with over 20 years of experience in the field.</p>
+    </section>
+
+    <!-- Services Section -->
     <section id="services">
         <h2>Our Services</h2>
         <ul>
-            <li>Consultation</li>
-            <li>Medical Check-Ups</li>
-            <li>Specialized Treatments</li>
+            <li>Anaesthesia for Surgery</li>
+            <li>Pain Management</li>
+            <li>Preoperative Assessment</li>
         </ul>
     </section>
 
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <p>We prioritize patient safety and comfort.</p>
+    </section>
+
+    <!-- Testimonials Section -->
     <section id="testimonials">
-        <h2>Testimonials</h2>
+        <h2>What Our Patients Say</h2>
         <blockquote>
-            <p>"Dr. Au Yong helped me through a tough time. Highly recommend!" - Patient A</p>
+            <p>“Dr. Angie and her team provided exceptional care during my surgery. Highly recommend!”</p>
         </blockquote>
     </section>
 
+    <!-- Contact Form Section -->
     <section id="contact">
         <h2>Contact Us</h2>
-        <form id="contact-form">
+        <form action="https://formspree.io/f/xdalrynp" method="POST">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Email:</label>
@@ -50,12 +65,11 @@
         </form>
     </section>
 
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // Add form validation or submission logic here
-            alert('Form submitted!');
-        });
-    </script>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Dr Angie Au Yong Phui Sze</p>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
